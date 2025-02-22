@@ -23,6 +23,7 @@ class BasicTokenizer(Tokenizer):
 
         # input text preprocessing
         text_bytes = text.encode("utf-8") # raw bytes
+        print(text_bytes)
         ids = list(text_bytes) # list of integers in range 0..255
 
         # iteratively merge the most common pairs to create new tokens
